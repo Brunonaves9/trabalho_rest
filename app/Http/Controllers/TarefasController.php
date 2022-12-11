@@ -13,7 +13,7 @@ class TarefasController extends Controller {
      */
     public function get_tarefas()
     {        
-        return response()->json(Tarefa::all());
+        return response()->json(Tarefa::all(), 200);
     }
 
     /**
